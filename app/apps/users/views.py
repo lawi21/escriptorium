@@ -52,8 +52,8 @@ class AcceptInvitation(CreateView):
         except Invitation.DoesNotExist:
             raise Http404("No Invitation matches the given query.")
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data()
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
         context['invitation'] = self.invitation
         return context
 
@@ -217,8 +217,8 @@ class ProfileGroupListCreate(LoginRequiredMixin, SuccessMessageMixin, CreateView
         kwargs['request'] = self.request
         return kwargs
 
-    def get_context_data(self):
-        context = super().get_context_data()
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
         context['invitations'] = Invitation.objects.filter(
             recipient=self.request.user,
             workflow_state__lt=Invitation.STATE_ACCEPTED)
