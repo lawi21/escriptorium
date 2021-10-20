@@ -526,7 +526,7 @@ class PagexmlParser(XMLParser):
             filename = pageTag.get("imageFilename")
         except (IndexError, AttributeError) as e:
             raise ParseError("""
-The PageXml file should contain an attribute imageFilename in Page tag for matching.
+The PAGE XML file should contain an attribute imageFilename in Page tag for matching.
             """)
         else:
             return filename
@@ -734,7 +734,7 @@ class IIIFManifestParser(ParserDocument):
 
 class TranskribusPageXmlParser(PagexmlParser):
     """
-    A Pagexml Parser for documents exported from Transkribus to handle data
+    A PAGE XML Parser for documents exported from Transkribus to handle data
     """
 
     # def validate(self):

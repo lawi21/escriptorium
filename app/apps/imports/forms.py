@@ -143,7 +143,7 @@ class ExportForm(BootstrapFormMixin, forms.Form):
     FORMAT_CHOICES = (
         (ALTO_FORMAT, 'ALTO'),
         (TEXT_FORMAT, 'Text'),
-        (PAGEXML_FORMAT, 'Pagexml')
+        (PAGEXML_FORMAT, 'PAGE XML')
     )
     parts = forms.ModelMultipleChoiceField(queryset=None)
     transcription = forms.ModelChoiceField(queryset=Transcription.objects.all())
