@@ -768,7 +768,7 @@ msgstr "Ontologie"
 
 #: escriptorium/templates/core/document_form.html:101
 msgid ""
-"The default configuration only contains semantic types. <br>It is not "
+"The default configuration only contains semantic types. <br/>It is not "
 "recommended to mix semantic, stylistic and layout types.<br><b>It is "
 "required to hit 'Update' to add your new types to the document.</b>"
 msgstr "Die Standardkonfiguration enthält nur semantische Typen. <br/>Es wird nicht empfohlen, semantische, stilistische und Layout-Typen zu mischen. "
