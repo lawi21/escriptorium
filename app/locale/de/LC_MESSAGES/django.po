@@ -44,19 +44,19 @@ msgstr "Sie haben keine GPU-Minuten mehr übrig."
 
 #: apps/api/serializers.py:392 apps/core/forms.py:291
 msgid "Lines and regions"
-msgstr "Linien und Regionen"
+msgstr "Zeilen und Bereiche"
 
 #: apps/api/serializers.py:393 apps/core/forms.py:292
 msgid "Lines Baselines and Masks"
-msgstr "Linien Baselines und Masken"
+msgstr "Zeilen Baselines und Masken"
 
 #: apps/api/serializers.py:394 apps/core/forms.py:293
 msgid "Only lines Masks"
-msgstr "Nur Linienmasken"
+msgstr "Nur Zeilenmasken"
 
 #: apps/api/serializers.py:395 apps/core/forms.py:294
 msgid "Regions"
-msgstr "Regionen"
+msgstr "Bereiche"
 
 #: apps/api/serializers.py:398 apps/core/forms.py:300 apps/core/models.py:142
 msgid "Horizontal l2r"
@@ -78,7 +78,7 @@ msgstr "Vertikal v. r. n. l."
 msgid ""
 "Either use model_name to create a new model, add a model pk to retrain an "
 "existing one, or both to create a new model from an existing one."
-msgstr "Verwenden Sie entweder model_name, um ein neues Modell zu erstellen, fügen Sie ein Modell pk hinzu, um ein bestehendes Modell neu zu trainieren," 
+msgstr "Verwenden Sie entweder model_name, um ein neues Modell zu erstellen, fügen Sie ein Modell pk hinzu, um ein bestehendes Modell neu zu trainieren, "
 "oder beides, um ein neues Modell aus einem bestehenden zu erstellen."
 
 #: apps/api/serializers.py:541
@@ -127,9 +127,9 @@ msgstr "Modell"
 
 #: apps/core/forms.py:311
 msgid ""
-"If checked, deletes existing segmentation and bound transcriptions"
+"If checked, deletes existing segmentation <b>and bound transcriptions</b> "
 "first!"
-msgstr "Wenn diese Option aktiviert ist, werden vorhandene Segmentierungen und damit verbundene Transkriptionen zuerst gelöscht!"
+msgstr "Wenn diese Option aktiviert ist, werden vorhandene Segmentierungen <b>und damit verbundene Transkriptionen<b/> zuerst gelöscht!"
 
 #: apps/core/models.py:146
 msgid "Top to bottom"
@@ -187,7 +187,7 @@ msgstr ""
 
 #: apps/core/models.py:292
 msgid "The position of the line relative to the polygon."
-msgstr "Die Position der Linie in Abhängigkeit vom Polygon."
+msgstr "Die Position der Zeile in Abhängigkeit vom Polygon."
 
 #: apps/core/models.py:387
 msgid "Binarized image needs to be the same size as original image."
@@ -199,7 +199,7 @@ msgstr "Erstellt"
 
 #: apps/core/models.py:406
 msgid "Converting"
-msgstr "Konvertieren"
+msgstr "Konvertiere"
 
 #: apps/core/models.py:407
 msgid "Converted"
@@ -207,7 +207,7 @@ msgstr "Konvertiert"
 
 #: apps/core/models.py:408
 msgid "Segmenting"
-msgstr "Segmentieren"
+msgstr "Segmentiere"
 
 #: apps/core/models.py:409
 msgid "Segmented"
@@ -215,7 +215,7 @@ msgstr "Segmentiert"
 
 #: apps/core/models.py:410
 msgid "Transcribing"
-msgstr "Transkribieren"
+msgstr "Transkribiere"
 
 #: apps/core/models.py:425
 msgid "Element"
@@ -249,7 +249,7 @@ msgstr "Segment"
 
 #: apps/core/models.py:1278
 msgid "Recognize"
-msgstr "Erkennen"
+msgstr "Erkenne"
 
 #: apps/core/models.py:1353
 msgid "Couldn't find the training task."
@@ -358,7 +358,7 @@ msgstr "Vorhandene Segmentierung überschreiben."
 msgid ""
 "Destroys existing regions, lines and any bound transcription before "
 "importing."
-msgstr "Beseitigt vorhandene Regionen, Linien und gebundene Transkriptionen vor dem Importieren."
+msgstr "Beseitigt vorhandene Bereiche, Zeilen und gebundene Transkriptionen vor dem Importieren."
 
 #: apps/imports/forms.py:33
 msgid "IIIF manifesto uri"
@@ -511,7 +511,7 @@ msgstr "Sie haben keinen Speicherplatz mehr. {total - i} Bilder wurden zum Impor
 #: apps/imports/parsers.py:771
 #, python-brace-format
 msgid "Error while fetching {filename}: {error}"
-msgstr ""Fehler beim Abrufen von {filename}: {error}"
+msgstr "Fehler beim Abrufen von {filename}: {error}"
 
 #: apps/imports/tasks.py:58
 msgid "Something went wrong during the import!"
@@ -768,19 +768,19 @@ msgstr "Ontologie"
 
 #: escriptorium/templates/core/document_form.html:101
 msgid ""
-"The default configuration only contains semantic types. It is not "
-"recommended to mix semantic, stylistic and layout types. It is "
-"required to hit 'Update' to add your new types to the document."
-msgstr "Die Standardkonfiguration enthält nur semantische Typen. Es wird nicht empfohlen, semantische, stilistische und Layout-Typen zu mischen. "
-"Sie müssen auf 'Aktualisieren' klicken, um Ihre neuen Typen dem Dokument hinzuzufügen."
+"The default configuration only contains semantic types. <br/>It is not "
+"recommended to mix semantic, stylistic and layout types.<br><b>It is "
+"required to hit 'Update' to add your new types to the document.</b>"
+msgstr "Die Standardkonfiguration enthält nur semantische Typen. <br/>Es wird nicht empfohlen, semantische, stilistische und Layout-Typen zu mischen. "
+"<br><b>Sie müssen auf 'Aktualisieren' klicken, um Ihre neuen Typen dem Dokument hinzuzufügen.</b>"
 
 #: escriptorium/templates/core/document_form.html:106
 msgid "Region types"
-msgstr "Regionstypen"
+msgstr "Bereichsstypen"
 
 #: escriptorium/templates/core/document_form.html:113
 msgid "Add a region type"
-msgstr "Einen Regionstypen hinzufügen"
+msgstr "Einen Bereichstyp hinzufügen"
 
 #: escriptorium/templates/core/document_form.html:123
 msgid "Line types"
@@ -1390,7 +1390,7 @@ msgid ""
 "    <br/>You can reverse the order of the line's points by selecting a line "
 "(or multiple) and using reverse <i class=\"fas fa-arrow-alt-h\"></i> (I "
 "key).\n"
-"    <br/>When in region mode, Regions can be edited the same way.\n"
+"    <br/>When in region mode, s can be edited the same way.\n"
 "    <br/>Selected lines can be linked or unlinked to regions with the "
 "corresponding buttons <i class=\"fas fa-link\"></i>(Y key) <i class=\"fas fa-"
 "unlink\"> (U key).</i>\n"
